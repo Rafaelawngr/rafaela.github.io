@@ -1,0 +1,116 @@
+.footer {
+  background: #000000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.25rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #cccccc;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.footer-contato li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.footer-contato-email::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: -42px;
+  top: 30px;
+  background: url("../img/email.svg") no-repeat center center;
+}
+
+.footer-contato-phone::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: -42px;
+  top: 28px;
+  background: url("../img/whatsapp.svg") no-repeat center center;
+}
+
+.footer-contato-linkedin::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: -42px;
+  top: 28px;
+  background: url("../img/linkedin.svg") no-repeat center center;
+}
+
+.footer-contato-behance::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: -42px;
+  top: 28px;
+  background: url("../img/behance.svg") no-repeat center center;
+}
+.footer-contato-github::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: -42px;
+  top: 28px;
+  background: url("../img/github.svg") no-repeat center center;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li {
+    font-size: 1rem;
+  }
+  .footer-contato li a {
+    font-size: 1rem;
+  }
+  .footer-contato-email::before {
+    display: none;
+  }
+  .footer-contato-phone::before {
+    display: none;
+  }
+  .footer-contato-linkedin::before {
+    display: none;
+  }
+  .footer-contato-behance::before {
+    display: none;
+  }
+  .footer-contato-github::before {
+    display: none;
+  }
+}
